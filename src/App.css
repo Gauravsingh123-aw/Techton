@@ -1,0 +1,26 @@
+/* Import all component styles */
+@import './styles/globals.css';
+@import './styles/Header.css';
+@import './styles/Footer.css';
+@import './styles/HeroSection.css';
+@import './styles/ServiceCard.css';
+@import './styles/ProjectCard.css';
+@import './styles/Home.css';
+@import './styles/About.css';
+@import './styles/ServiceDetail.css';
+@import './styles/Projects.css';
+@import './styles/Process.css';
+@import './styles/WhyUs.css';
+@import './styles/Blog.css';
+@import './styles/Contact.css';
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+}

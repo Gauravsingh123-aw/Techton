@@ -1,0 +1,214 @@
+/* Why Us Page */
+.why-us {
+  width: 100%;
+}
+
+.why-us-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.why-us-hero h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.why-us-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+}
+
+.why-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Highlights */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.highlight-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+  margin-bottom: 0.8rem;
+  color: var(--dark-color);
+}
+
+.highlight-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Comparison Table */
+.comparison-section {
+  margin-bottom: 4rem;
+}
+
+.comparison-section h2 {
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+.comparison-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+}
+
+th {
+  padding: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+tr:nth-child(even) {
+  background-color: var(--light-color);
+}
+
+td.check {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Success Metrics */
+.success-metrics {
+  background: var(--light-color);
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+
+.success-metrics h2 {
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.metric {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.metric h3 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.metric p {
+  color: #666;
+  font-weight: 600;
+}
+
+/* Commitment Section */
+.commitment-section {
+  margin-top: 3rem;
+}
+
+.commitment-section h2 {
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+.commitment-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.commitment-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.commitment-item h4 {
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
+}
+
+.commitment-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .why-us-hero {
+    padding: 2rem 1rem;
+  }
+
+  .why-us-hero h1 {
+    font-size: 2rem;
+  }
+
+  .why-us-container {
+    padding: 1rem;
+  }
+
+  .highlights-grid,
+  .metrics-grid,
+  .commitment-list {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 0.8rem;
+  }
+}

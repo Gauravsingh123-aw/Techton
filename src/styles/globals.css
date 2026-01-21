@@ -1,0 +1,136 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0066ff;
+  --secondary-color: #ff6b35;
+  --dark-color: #1a1a1a;
+  --light-color: #f5f5f5;
+  --text-color: #333;
+  --border-color: #ddd;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Common Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0052cc;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 102, 255, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+  border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+.btn-large {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+}
+
+.cta-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #e85a2d;
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--dark-color);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
