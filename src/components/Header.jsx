@@ -13,7 +13,7 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <span className="logo-icon">⚡</span>
+          <span className="logo-icon">⚡TEK</span>
           <span className="logo-text">Tekton Tech</span>
         </Link>
 
