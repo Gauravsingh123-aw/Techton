@@ -36,8 +36,8 @@ function ServiceDetail() {
           description: "Specialized designs for sheet metal fabrication and welded assemblies."
         }
       ],
-      tools: ["AutoCAD", "CATIA", "SolidWorks", "Inventor", "ANSYS", "MATLAB", "Fusion 360"],
-      industries: ["Automotive", "Manufacturing", "Machinery", "Hydraulics", "HVAC", "Construction"],
+      tools: ["AutoCAD", "CATIA", "SolidWorks", "Inventor", "ANSYS"],
+      industries: ["Automotive", "Manufacturing", "Machinery"],
       process: "We follow a rigorous process including conceptual design, detailed design, analysis, validation, and documentation to ensure your product is ready for manufacturing."
     },
     software: {
