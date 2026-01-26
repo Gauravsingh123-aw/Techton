@@ -15,7 +15,7 @@ export const serviceCategories = [
   },
   {
     id: "interior",
-    name: "Interior Design Services",
+    name: "Layout Design Services",
     icon: "🎨",
     shortDesc: "Modern interior design for residential and commercial spaces",
     fullDesc: "We specialize in residential and commercial interior design, 3D visualization, space planning, and complete renovation projects."
