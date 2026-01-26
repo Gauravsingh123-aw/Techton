@@ -29,6 +29,8 @@
 
 .logo-icon {
   font-size: 1.8rem;
+  height: 60px;
+  width: auto;
 }
 
 .logo-text {

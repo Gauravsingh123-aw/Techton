@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
-
+import logo from '../assets/logo.jpg'
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,8 +13,8 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <span className="logo-icon">⚡</span>
-          <span className="logo-text">Tekton Tech</span>
+          <img className="logo-icon" src={logo}/>
+          {/* <span className="logo-text">Tekton Tech</span> */}
         </Link>
 
         <button className="mobile-menu-btn" onClick={toggleMenu}>
