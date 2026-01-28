@@ -12,10 +12,10 @@ function Footer() {
           <h3>About Tekton Tech</h3>
           <p>Multi-domain expertise in Mechanical Design, Software Solutions, and Interior Design.</p>
           <div className="social-links">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">f</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">𝕏</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">in</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">📷</a>
+            {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">f</a> */}
+            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">𝕏</a> */}
+            <a href="https://www.linkedin.com/in/tektontech-solution-2637453a8/" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://www.instagram.com/tektontechsolutions_/" target="_blank" rel="noopener noreferrer">📷</a>
           </div>
         </div>
 
@@ -40,10 +40,10 @@ function Footer() {
 
         <div className="footer-section">
           <h3>Contact Info</h3>
-          <p>📧 Email: <a href="mailto:info@tektontech.com">info@tektontech.com</a></p>
-          <p>📱 Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
-          <p>💬 WhatsApp: <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">Chat with us</a></p>
-          <p>📍 India</p>
+          <p>📧 Email: <a href="mailto:tektontechsolutions@gmail.com">tektontechsolutions@gmail.com</a></p>
+          <p>📱 Phone: <a href="tel:+919696573095">+91 96965 73095</a></p>
+          <p>💬 WhatsApp: <a href="https://wa.me/919696573095" target="_blank" rel="noopener noreferrer">Chat with us</a></p>
+          <p>📍Crossing Republic Ghazibad India</p>
         </div>
       </div>
 

@@ -75,7 +75,7 @@ function ServiceDetail() {
       process: "Our development methodology includes requirements gathering, architecture design, agile development, testing, and continuous deployment with post-launch support."
     },
     interior: {
-      title: "Interior Design Services",
+      title: "Layout Design Services",
       icon: "🎨",
       intro: "Create beautiful, functional spaces that reflect your style and enhance your lifestyle or business environment.",
       services: [

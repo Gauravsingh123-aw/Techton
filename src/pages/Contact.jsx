@@ -90,7 +90,7 @@ function Contact() {
                   <option value="">Select a service</option>
                   <option value="mechanical">Mechanical Design</option>
                   <option value="software">Software & IT Solutions</option>
-                  <option value="interior">Interior Design</option>
+                  <option value="interior">Layout Design</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -119,19 +119,19 @@ function Contact() {
             
             <div className="info-card">
               <h3>📧 Email</h3>
-              <a href="mailto:info@tektontech.com">info@tektontech.com</a>
-              <a href="mailto:projects@tektontech.com">projects@tektontech.com</a>
+              <a href="mailto:tektontechsolutions@gmail.com">tektontechsolutions@gmail.com</a>
+              {/* <a href="mailto:projects@tektontech.com">projects@tektontech.com</a> */}
             </div>
 
             <div className="info-card">
               <h3>📱 Phone</h3>
-              <a href="tel:+919876543210">+91 98765 43210</a>
-              <a href="tel:+919876543211">+91 98765 43211</a>
+              <a href="tel:+919696573095">+91 96965 73095</a>
+              {/* <a href="tel:+919876543211">+91 98765 43211</a> */}
             </div>
 
             <div className="info-card">
               <h3>💬 Quick Connect</h3>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
+              <a href="https://wa.me/919696573095" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
                 💬 Chat on WhatsApp
               </a>
             </div>
@@ -139,7 +139,7 @@ function Contact() {
             <div className="info-card">
               <h3>📍 Office Location</h3>
               <p>Tekton Tech Solutions<br />
-                 Tech Hub, Innovation District<br />
+                 Crossing Republic Ghaziabad<br />
                  India
               </p>
             </div>
@@ -155,22 +155,22 @@ function Contact() {
             <div className="social-section">
               <h3>Follow Us</h3>
               <div className="social-links-contact">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> */}
+                {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> */}
+                <a href="https://www.linkedin.com/in/tektontech-solution-2637453a8/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/tektontechsolutions_/" target="_blank" rel="noopener noreferrer">Instagram</a>
               </div>
             </div>
           </div>
         </div>
 
         {/* Map Section - Optional */}
-        <div className="map-section">
+        {/* <div className="map-section">
           <h2>Find Us on Map</h2>
           <div className="map-placeholder">
             <p>📍 Google Map Integration Coming Soon</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

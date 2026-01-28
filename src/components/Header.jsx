@@ -31,7 +31,7 @@ function Header() {
             <div className="dropdown-menu">
               <Link to="/services/mechanical" onClick={() => setIsMenuOpen(false)}>Mechanical Design</Link>
               <Link to="/services/software" onClick={() => setIsMenuOpen(false)}>Software & IT</Link>
-              <Link to="/services/interior" onClick={() => setIsMenuOpen(false)}>Interior Design</Link>
+              <Link to="/services/interior" onClick={() => setIsMenuOpen(false)}>Layout Design</Link>
             </div>
           </div>
           <Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link>

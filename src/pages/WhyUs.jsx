@@ -81,7 +81,7 @@ function WhyUs() {
         </section>
 
         {/* Client Success Stories */}
-        <section className="success-metrics">
+        {/* <section className="success-metrics">
           <h2>Our Track Record</h2>
           <div className="metrics-grid">
             <div className="metric">
@@ -101,7 +101,7 @@ function WhyUs() {
               <p>Expert Team Members</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Our Commitment */}
         <section className="commitment-section">
