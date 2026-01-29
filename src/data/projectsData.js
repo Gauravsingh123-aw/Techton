@@ -100,7 +100,7 @@ export const projectsData = [
     problem: "Complex hydraulic system required simulation and stress analysis before manufacturing.",
     solution: "Performed FEA analysis, created detailed assembly drawings, and validated design performance.",
     tools: ["SOLIDWORKS", "ANSYS Fluent", "CAD"],
-    image: "https://images.unsplash.com/photo-1581092165334-29c5030ee26e?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1701448150058-43d6d199b103?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fG1lY2hhbmljYWwlMjBlbmdpbmVlcmluZ3xlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     id: 6,
@@ -109,6 +109,6 @@ export const projectsData = [
     problem: "High-end residential project needed premium interior design with smart home integration planning.",
     solution: "Delivered 3D renders, material selection, space optimization, and technology placement layouts.",
     tools: ["3D Rendering", "Design", "Planning"],
-    image: "https://images.unsplash.com/photo-1565183938294-7563f3ce68c5?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1635939412822-8f3ee593d147?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxheW91dCUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
   }
 ];

@@ -84,24 +84,21 @@ function ServiceDetail() {
           description: "Complete interior design for homes including living spaces, bedrooms, kitchens, and bathrooms."
         },
         {
-          title: "Commercial Interiors",
+          title: "2D Layout",
           description: "Professional office spaces, retail stores, restaurants, and hospitality design solutions."
         },
         {
-          title: "3D Visualization",
+          title: "JIG Design",
           description: "Photorealistic 3D renderings to visualize designs before implementation."
         },
         {
-          title: "Space Planning",
+          title: "Fixture Design",
           description: "Optimal space utilization with ergonomic and aesthetic considerations."
         },
+        
         {
-          title: "Material & Furniture Selection",
-          description: "Expert guidance on selecting premium materials and furniture that match your vision and budget."
-        },
-        {
-          title: "Project Management",
-          description: "End-to-end project management from concept to final installation and handover."
+          title: "Space Planning",
+          description: "Optimal space utilization with ergonomic and aesthetic consideration."
         }
       ],
       tools: ["SketchUp", "AutoCAD", "3D Studio Max", "Photoshop", "Revit", "Lumion"],

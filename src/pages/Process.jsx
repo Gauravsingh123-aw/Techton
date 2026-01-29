@@ -19,7 +19,7 @@ function Process() {
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>
               </div>
-              {step.number < processSteps.length && <div className="step-arrow">→</div>}
+              {step.number < processSteps.length && <div className="step-arrow"></div>}
             </div>
           ))}
         </div>
@@ -48,7 +48,7 @@ function Process() {
         </section>
 
         {/* Timeline Expectation */}
-        <section className="timeline-section">
+        {/* <section className="timeline-section">
           <h2>Typical Project Timeline</h2>
           <div className="timeline-info">
             <div className="timeline-item">
@@ -64,7 +64,7 @@ function Process() {
               <p>Complex systems, enterprise software, comprehensive renovations</p>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

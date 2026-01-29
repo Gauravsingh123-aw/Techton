@@ -6,7 +6,7 @@ function WhyUs() {
   return (
     <div className="why-us">
       <div className="why-us-hero">
-        <h1>Why Choose Tekton Tech Solutions?</h1>
+        <h1>Why Choose TektonTech Solutions?</h1>
         <p>Discover what sets us apart from the competition</p>
       </div>
 
@@ -23,7 +23,7 @@ function WhyUs() {
         </section>
 
         {/* Detailed Comparison */}
-        <section className="comparison-section">
+        {/* <section className="comparison-section">
           <h2>How We Compare</h2>
           <div className="comparison-table">
             <table>
@@ -78,7 +78,7 @@ function WhyUs() {
               </tbody>
             </table>
           </div>
-        </section>
+        </section> */}
 
         {/* Client Success Stories */}
         {/* <section className="success-metrics">
