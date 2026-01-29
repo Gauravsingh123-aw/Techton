@@ -20,7 +20,7 @@ function Home() {
       {/* Hero Section */}
       <HeroSection
         title="Transform Your Vision into Reality"
-        subtitle="Multi-domain expertise in Mechanical Design, Software Solutions, and Interior Design"
+        subtitle="Multi-domain expertise in Mechanical Design, Software & IT, and Layout Design"
         primaryBtn={{ text: "Get a Quote", link: "/contact" }}
         secondaryBtn={{ text: "View Projects", link: "/projects" }}
         image={home_img}
@@ -29,7 +29,7 @@ function Home() {
       {/* About Snapshot */}
       <section className="about-snapshot">
         <div className="container">
-          <h2>Why Choose Tekton Tech Solutions?</h2>
+          <h2>Why Choose TektonTech Solutions?</h2>
           <p className="intro-text">
             "As a growing team, we focus on giving each project the personal
             attention it deserves. You won’t be just another client — we’ll work

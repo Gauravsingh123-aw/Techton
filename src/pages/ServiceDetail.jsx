@@ -12,15 +12,15 @@ function ServiceDetail() {
       intro: "Transform your mechanical concepts into precise, manufacturable designs with our expert CAD and engineering services.",
       services: [
         {
-          title: "CAD Design (2D & 3D)",
+          title: "CAD Design",
           description: "Professional CAD modeling in various software platforms including AutoCAD, CATIA, SolidWorks, and Inventor."
         },
         {
-          title: "Product Design & Development",
+          title: "JIG AND FIXTURES DESIGN & DEVELOPMENT",
           description: "End-to-end product design from concept to prototype, including design optimization and testing."
         },
         {
-          title: "Manufacturing Drawings",
+          title: "Detailed drafting and manufacturing drawings",
           description: "Detailed manufacturing and assembly drawings with complete technical specifications and tolerances."
         },
         {
@@ -28,16 +28,16 @@ function ServiceDetail() {
           description: "Extract design information from existing products for modification, replication, or improvement."
         },
         {
-          title: "FEA & Simulation",
+          title: "FEA",
           description: "Finite Element Analysis and simulation using ANSYS, CFX, and other leading software."
         },
-        {
-          title: "Sheet Metal & Welding Designs",
-          description: "Specialized designs for sheet metal fabrication and welded assemblies."
-        }
+        // {
+        //   title: "Sheet Metal & Welding Designs",
+        //   description: "Specialized designs for sheet metal fabrication and welded assemblies."
+        // }
       ],
-      tools: ["AutoCAD", "CATIA", "SolidWorks", "Inventor", "ANSYS"],
-      industries: ["Automotive", "Manufacturing", "Machinery"],
+      tools: ["AutoCAD", "CATIA", "SolidWorks",  "ANSYS"],
+      industries: ["Automotive", "Manufacturing"],
       process: "We follow a rigorous process including conceptual design, detailed design, analysis, validation, and documentation to ensure your product is ready for manufacturing."
     },
     software: {
@@ -80,7 +80,7 @@ function ServiceDetail() {
       intro: "Create beautiful, functional spaces that reflect your style and enhance your lifestyle or business environment.",
       services: [
         {
-          title: "Residential Interiors",
+          title: "Office and Plant Layout",
           description: "Complete interior design for homes including living spaces, bedrooms, kitchens, and bathrooms."
         },
         {
