@@ -8,6 +8,8 @@
   color: white;
   padding: 3rem 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .blog-hero h1 {
@@ -35,16 +37,17 @@
 }
 
 .blog-card {
-  background: white;
-  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(99, 102, 241, 0.1);
 }
 
 .blog-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-15px);
+  box-shadow: 0 20px 50px rgba(99, 102, 241, 0.3);
 }
 
 .blog-image {
@@ -68,10 +71,10 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: var(--secondary-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 5px 12px;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
 }

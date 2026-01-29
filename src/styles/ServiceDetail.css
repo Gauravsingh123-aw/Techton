@@ -4,26 +4,31 @@
 }
 
 .service-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
   color: white;
-  padding: 3rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.service-icon {
-  font-size: 4rem;
-  display: block;
-  margin-bottom: 1rem;
+.service-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(240, 147, 251, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
 }
 
-.service-hero h1 {
-  color: white;
-  margin-bottom: 1rem;
-}
-
+.service-hero .service-icon,
+.service-hero h1,
 .service-hero p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .service-container {
@@ -48,15 +53,28 @@
 }
 
 .service-item {
-  background: var(--light-color);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
   padding: 2rem;
-  border-radius: 10px;
-  border-left: 4px solid var(--primary-color);
+  border-radius: 16px;
+  border-left: 5px solid var(--primary-color);
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
 }
 
 .service-item h3 {
   margin-bottom: 1rem;
-  color: var(--primary-color);
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
 }
 
 .service-item p {
@@ -75,16 +93,18 @@
 
 .tool-badge,
 .industry-badge {
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 0.7rem 1.2rem;
-  border-radius: 20px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
   font-weight: 600;
   font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .industry-badge {
-  background-color: var(--secondary-color);
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);
 }
 
 /* Process Text */
@@ -92,10 +112,13 @@
   font-size: 1.05rem;
   line-height: 1.8;
   color: #555;
-  background: var(--light-color);
-  padding: 2rem;
-  border-radius: 10px;
-  border-left: 4px solid var(--primary-color);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border-left: 5px solid var(--primary-color);
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 /* CTA */
