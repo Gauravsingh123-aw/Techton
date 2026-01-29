@@ -102,7 +102,7 @@ function Home() {
         <div className="container">
           <h2>Ready to Start Your Next Project?</h2>
           <p>
-            Let's discuss how Tekton Tech Solutions can help bring your ideas to
+            Let's discuss how TektonTech Solutions can help bring your ideas to
             life.
           </p>
           <Link to="/contact" className="btn btn-large">

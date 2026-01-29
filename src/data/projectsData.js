@@ -78,7 +78,7 @@ export const projectsData = [
   {
     id: 3,
     title: "Corporate Office Interior Redesign",
-    category: "Interior",
+    category: "Layout",
     problem: "Legacy office space needed modern renovation to improve employee productivity and brand image.",
     solution: "Complete 3D visualization, space planning with ergonomic furniture, and collaborative areas design.",
     tools: ["SketchUp", "Photoshop", "AutoCAD"],
@@ -105,7 +105,7 @@ export const projectsData = [
   {
     id: 6,
     title: "Luxury Residential Interior",
-    category: "Interior",
+    category: "Layout",
     problem: "High-end residential project needed premium interior design with smart home integration planning.",
     solution: "Delivered 3D renders, material selection, space optimization, and technology placement layouts.",
     tools: ["3D Rendering", "Design", "Planning"],

@@ -6,8 +6,8 @@ function About() {
   return (
     <div className="about">
       <HeroSection
-        title="About Tekton Tech Solutions"
-        subtitle="Building excellence across Mechanical Design, Software, and Interior Design"
+        title="About TektonTech Solutions"
+        subtitle="Building excellence across Mechanical Design, Software, and Layout Design"
       />
 
       <div className="about-container">
@@ -15,7 +15,7 @@ function About() {
         <section className="about-section">
           <h2>Company Overview</h2>
           <p>
-            Tekton Tech Solutions is a forward-thinking organization established with a mission to deliver innovative engineering and design solutions. We specialize in bridging the gap between traditional engineering practices and modern digital transformation.
+            TektonTech Solutions is a forward-thinking organization established with a mission to deliver innovative engineering and design solutions. We specialize in bridging the gap between traditional engineering practices and modern digital transformation.
           </p>
           <p>
             Our team of experienced professionals brings together expertise from mechanical engineering, software development, and interior design to provide comprehensive, integrated solutions.
@@ -74,10 +74,10 @@ function About() {
             <div className="expertise-card">
               <h3>⚙️ Mechanical Design</h3>
               <ul>
-                <li>CAD/CAM Design (2D & 3D)</li>
+                <li>CAD</li>
                 <li>Product Development & Prototyping</li>
                 <li>Manufacturing & Assembly Drawings</li>
-                <li>FEA & Simulation Analysis</li>
+                <li>FEA</li>
                 <li>Reverse Engineering</li>
               </ul>
             </div>
@@ -92,13 +92,13 @@ function About() {
               </ul>
             </div>
             <div className="expertise-card">
-              <h3>🎨 Interior Design</h3>
+              <h3>🎨 Layout Design</h3>
               <ul>
-                <li>Residential Interiors</li>
-                <li>Commercial Interiors</li>
-                <li>3D Visualization & Rendering</li>
-                <li>Space Planning & Layout</li>
-                <li>Project Management</li>
+                <li>Plant Layout</li>
+                <li>Office Layout</li>
+                <li>2D Layout</li>
+                <li>Jig Design</li>
+                <li>Fixture Design</li>
               </ul>
             </div>
           </div>
