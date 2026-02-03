@@ -98,7 +98,7 @@ function About() {
                 <li>Office Layout</li>
                 <li>2D Layout</li>
                 <li>Jig Design</li>
-                <li>Fixture Design</li>
+                {/* <li>Fixture Design</li> */}
               </ul>
             </div>
           </div>

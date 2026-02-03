@@ -13,11 +13,11 @@ function ServiceDetail() {
       services: [
         {
           title: "CAD Design",
-          description: "Professional CAD modeling in various software platforms including AutoCAD, CATIA, SolidWorks, and Inventor."
+          description: "CAD solutions built for performance and manufacturability.Accurate designs for reliable manufacturing.Engineering-driven CAD design for real-world applications.Optimized designs. Reduced errors , better results."
         },
         {
           title: "JIG AND FIXTURES DESIGN & DEVELOPMENT",
-          description: "End-to-end product design from concept to prototype, including design optimization and testing."
+          description: "Precision Jig & Fixture Design for Accurate Manufacturing.Designing Jigs and Fixtures for Efficiency, Accuracy, and Reliability."
         },
         {
           title: "Detailed drafting and manufacturing drawings",
@@ -81,27 +81,27 @@ function ServiceDetail() {
       services: [
         {
           title: "Office and Plant Layout",
-          description: "Complete interior design for homes including living spaces, bedrooms, kitchens, and bathrooms."
+          description: "Smart Office and Plant Layouts Designed for Efficiency and Growth. Optimizing Space, Flow, and Productivity Through Intelligent Layout Design.Workplace Design to Meets Operational Efficiency.Engineering Layouts that Support People, Process, and Performance."
         },
         {
           title: "2D Layout",
-          description: "Professional office spaces, retail stores, restaurants, and hospitality design solutions."
+          description: "Smart Office and Plant Layouts Designed for Efficiency and Growth.Optimizing Space, Flow, and Productivity Through Intelligent Layout Design.Workplace Design to Meets Operational Efficiency.Engineering Layouts that Support People, Process, and Performance."
         },
-        {
-          title: "JIG Design",
-          description: "Photorealistic 3D renderings to visualize designs before implementation."
-        },
-        {
-          title: "Fixture Design",
-          description: "Optimal space utilization with ergonomic and aesthetic considerations."
-        },
+        // {
+        //   title: "JIG Design",
+        //   description: "Photorealistic 3D renderings to visualize designs before implementation."
+        // },
+        // {
+        //   title: "Fixture Design",
+        //   description: "Optimal space utilization with ergonomic and aesthetic considerations."
+        // },
         
-        {
-          title: "Space Planning",
-          description: "Optimal space utilization with ergonomic and aesthetic consideration."
-        }
+        // {
+        //   title: "Space Planning",
+        //   description: "Optimal space utilization with ergonomic and aesthetic consideration."
+        // }
       ],
-      tools: ["SketchUp", "AutoCAD", "3D Studio Max", "Photoshop", "Revit", "Lumion"],
+      tools: ["SketchUp", "AutoCAD"],
       industries: ["Residential", "Commercial", "Healthcare", "Hospitality", "Retail", "Corporate"],
       process: "We begin with consultation and space assessment, create 3D visualizations, finalize designs with your feedback, source materials, and manage professional installation."
     }
