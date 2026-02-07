@@ -28,6 +28,7 @@
   content: "";
   position: absolute;
   inset: 0;
+  /* original overlay transparency restored */
   background: linear-gradient(180deg, rgba(6,12,24,0.55), rgba(6,12,24,0.35));
   z-index: 1;
 }
@@ -41,13 +42,13 @@
   background: transparent;
   padding: 0 1rem;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
   max-width: 1000px;
   width: 100%;
 }
 
 .overlay h1 {
-  color: var(--text-on-dark);
+  color: black;
   font-size: clamp(28px, 6vw, 56px);
   font-weight: 800;
   margin: 0 0 0.5rem 0;
@@ -55,8 +56,9 @@
 }
 
 .overlay p {
-  color: rgba(245,245,245,0.9);
-  font-size: 1.05rem;
+  color: rgba(246, 243, 243, 0.9);
+  font-size: 1.25rem;
+  font-weight: 500;
   margin: 0 auto;
   max-width: 900px;
 }

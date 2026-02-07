@@ -235,7 +235,8 @@
 /* Final CTA */
 .final-cta {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  /* match dark hero gradient for cohesive dark look */
+  background: linear-gradient(135deg, #071026 0%, #0A192F 60%, #0f2a44 100%);
   color: white;
   text-align: center;
 }
