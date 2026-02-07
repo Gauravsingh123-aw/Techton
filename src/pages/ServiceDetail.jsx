@@ -1,6 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/ServiceDetail.css';
+import mech_banner from '../assets/mech_banner.jpg'
+import soft_banner from '../assets/soft_banner.jpg'
+import layout_banner from '../assets/layout_banner.jpg'
+
 
 function ServiceDetail() {
   const { serviceId } = useParams();
@@ -108,6 +112,16 @@ function ServiceDetail() {
   };
 
   const service = serviceDetails[serviceId];
+  let banner;
+  if(service.title==="Software & IT Solutions"){
+    banner=soft_banner;
+  }
+  else if(service.title=="Mechanical Design Services"){
+    banner=mech_banner;
+  }
+  else if(service.title=="Layout Design Services"){
+    banner=layout_banner;
+  }
 
   if (!service) {
     return <div className="service-detail"><p>Service not found</p></div>;
@@ -116,9 +130,12 @@ function ServiceDetail() {
   return (
     <div className="service-detail">
       <div className="service-hero">
-        <span className="service-icon">{service.icon}</span>
-        <h1>{service.title}</h1>
-        <p>{service.intro}</p>
+        <img className="img-banner" src={banner} alt="Service Banner" />
+        <div className="overlay">
+          <span className="service-icon">{service.icon}</span>
+          <h1>{service.title}</h1>
+          <p>{service.intro}</p>
+        </div>
       </div>
 
       <div className="service-container">
