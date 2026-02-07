@@ -89,7 +89,7 @@ function ServiceDetail() {
         },
         {
           title: "2D Layout",
-          description: "Smart Office and Plant Layouts Designed for Efficiency and Growth.Optimizing Space, Flow, and Productivity Through Intelligent Layout Design.Workplace Design to Meets Operational Efficiency.Engineering Layouts that Support People, Process, and Performance."
+          description: "Well-designed 2D, office, and plant layouts ensure smooth operational flow while minimizing movement and maximizing output"
         },
         // {
         //   title: "JIG Design",

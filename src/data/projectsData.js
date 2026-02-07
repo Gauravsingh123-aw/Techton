@@ -1,3 +1,5 @@
+import testing_fixture from '../assets/testing_fixture.jpeg'
+import assembly_fixture from '../assets/assembly_fixture.jpeg'
 export const serviceCategories = [
   {
     id: "mechanical",
@@ -59,12 +61,12 @@ export const stats = [
 export const projectsData = [
   {
     id: 1,
-    title: "Advanced CNC Machine Design",
+    title: "Testing fixture",
     category: "Mechanical",
-    problem: "Client needed a custom CNC machine for precision manufacturing with improved efficiency.",
-    solution: "Designed complete CAD models with 3D simulations, created manufacturing drawings, and optimized for production.",
+    problem: "The client needed custom-designed testing fixtures to ensure accurate assembly, reliable testing, and improved overall efficiency.",
+    solution: "We designed and developed custom testing fixtures that enabled precise assembly, reliable testing, reduced setup time, and enhanced productivity",
     tools: ["AutoCAD", "CATIA", "ANSYS"],
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop"
+    image: testing_fixture
   },
   {
     id: 2,
@@ -95,12 +97,12 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: "Hydraulic System Analysis",
+    title: "Assembly Fixtures",
     category: "Mechanical",
-    problem: "Complex hydraulic system required simulation and stress analysis before manufacturing.",
-    solution: "Performed FEA analysis, created detailed assembly drawings, and validated design performance.",
+    problem: "The client needed custom-designed assembly to ensure accurate assembly, reliable testing, and improved overall efficiency.",
+    solution: "We designed and developed custom assembly that enabled precise assembly, reliable testing, reduced setup time, and enhanced productivity",
     tools: ["SOLIDWORKS", "ANSYS Fluent", "CAD"],
-    image: "https://images.unsplash.com/photo-1701448150058-43d6d199b103?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fG1lY2hhbmljYWwlMjBlbmdpbmVlcmluZ3xlbnwwfHwwfHx8MA%3D%3D"
+    image: assembly_fixture
   },
   {
     id: 6,
