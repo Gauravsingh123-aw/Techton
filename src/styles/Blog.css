@@ -4,7 +4,8 @@
 }
 
 .blog-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* dark hero gradient to match site hero */
+  background: linear-gradient(135deg, #071026 0%, #0A192F 60%, #0f2a44 100%);
   color: white;
   padding: 3rem 2rem;
   text-align: center;
