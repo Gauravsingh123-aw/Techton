@@ -52,15 +52,6 @@ export const blogPosts = [
     date: "2024-01-05",
     author: "Design Team",
     image: "https://images.unsplash.com/photo-1565183938294-7563f3ce68c5?w=400&h=250&fit=crop"
-  },
-  {
-    id: 4,
-    title: "3D Printing in Manufacturing",
-    category: "Mechanical Design",
-    excerpt: "How 3D printing technology is revolutionizing prototyping and small-scale manufacturing processes.",
-    date: "2024-01-01",
-    author: "Tekton Team",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop"
   }
 ];
 
