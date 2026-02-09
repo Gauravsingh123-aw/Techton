@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
+import axios from 'axios'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -20,12 +21,20 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
     e.preventDefault();
     // Here you would typically send the form data to a backend
     console.log('Form submitted:', formData);
-    setSubmitted(true);
+    try{
+      let response= await axios.post('http://localhost:3000/email-api/send_email',{data:formData})
+      console.log(response.data)
+    }catch(err){
+      console.log("Error sending mail",err);
+    }finally{
     setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    setSubmitted(true);
+    console.log("finallly")
+    }
     setTimeout(() => setSubmitted(false), 5000);
   };
 

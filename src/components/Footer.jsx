@@ -48,7 +48,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} Tekton Tech Solutions. All rights reserved.</p>
+        <p>&copy; {currentYear} TektonTech Solutions. All rights reserved.</p>
       </div>
     </footer>
   );
