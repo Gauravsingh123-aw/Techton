@@ -23,10 +23,9 @@ function Contact() {
 
   const handleSubmit =async (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to a backend
     console.log('Form submitted:', formData);
     try{
-      let response= await axios.post('http://localhost:3000/email-api/send_email',{data:formData})
+      let response= await axios.post('http://localhost:3000/email-api/send-email',{data:formData})
       console.log(response.data)
     }catch(err){
       console.log("Error sending mail",err);
