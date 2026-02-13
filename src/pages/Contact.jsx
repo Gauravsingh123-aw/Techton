@@ -25,7 +25,7 @@ function Contact() {
     e.preventDefault();
     console.log('Form submitted:', formData);
     try{
-      let response= await axios.post('http://localhost:3000/email-api/send-email',{data:formData})
+      let response= await axios.post('https://mailer-beryl-gamma.vercel.app/email-api/send-email',{data:formData})
       console.log(response.data)
     }catch(err){
       console.log("Error sending mail",err);
