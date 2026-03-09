@@ -146,7 +146,7 @@ function Contact() {
 
             <div className="info-card">
               <h3>📍 Office Location</h3>
-              <p>Tekton Tech Solutions<br />
+              <p>TektonTech Solutions<br />
                  Crossing Republic Ghaziabad<br />
                  India
               </p>
