@@ -11,7 +11,7 @@
   --accent-color: #f59e0b;
   --dark-color: #1a1a2e;
   --light-color: #f8fafc;
-  --text-color: #334155;
+  --text-color: #1a1a1a;
   --border-color: #e2e8f0;
   --success-color: #10b981;
   --text-on-dark: #F5F5F5;
@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   line-height: 1.6;
@@ -104,6 +104,21 @@ html {
 }
 
 /* Typography */
+/* Headings use Plus Jakarta Sans with slight negative letter-spacing */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+/* Body text explicit rules */
+p, li, span {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -125,7 +140,7 @@ h3 {
 
 p {
   margin-bottom: 1rem;
-  color: #555;
+  color: var(--text-color);
 }
 
 /* Responsive */
