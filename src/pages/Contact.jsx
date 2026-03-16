@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
 import axios from 'axios'
+import contact_banner from '../assets/contact_us.jpg'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -40,15 +41,18 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact-hero">
-        <h1>Get In Touch</h1>
-        <p>Have a project in mind? We'd love to hear from you</p>
+        <img className="img-banner" src={contact_banner} alt="Contact Banner" />
+        <div className="overlay">
+          <h1>Get In Touch</h1>
+          <p>Have a project in mind? We'd love to hear from you</p>
+        </div>
       </div>
 
       <div className="contact-container">
         <div className="contact-grid">
           {/* Contact Form */}
           <div className="contact-form-section">
-            <h2>Send us a Message</h2>
+            <h2>Get in touch with us</h2>
             {submitted && <div className="success-message">✓ Thank you! We'll get back to you soon.</div>}
             <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-group">

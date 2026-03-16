@@ -17,11 +17,11 @@ function ServiceDetail() {
       services: [
         {
           title: "CAD Design",
-          description: "CAD solutions built for performance and manufacturability.Accurate designs for reliable manufacturing.Engineering-driven CAD design for real-world applications.Optimized designs. Reduced errors , better results."
+          description: "CAD solutions built for performance and manufacturability.\nAccurate designs for reliable manufacturing.Engineering-driven CAD design for real-world applications.Optimized designs. Reduced errors , better results."
         },
         {
           title: "JIG AND FIXTURES DESIGN & DEVELOPMENT",
-          description: "Precision Jig & Fixture Design for Accurate Manufacturing.Designing Jigs and Fixtures for Efficiency, Accuracy, and Reliability."
+          description: "Precision Jig & Fixture Design for Accurate Manufacturing.\nDesigning Jigs and Fixtures for Efficiency, Accuracy, and Reliability."
         },
         {
           title: "Detailed drafting and manufacturing drawings",
@@ -35,10 +35,10 @@ function ServiceDetail() {
           title: "FEA",
           description: "Finite Element Analysis and simulation using ANSYS, CFX, and other leading software."
         },
-        // {
-        //   title: "Sheet Metal & Welding Designs",
-        //   description: "Specialized designs for sheet metal fabrication and welded assemblies."
-        // }
+        {
+          title: "Spm design",
+          description: `Precision Engineering. Smart Automation.\n Reliable Performance.\nCustom SPM Design and Engineering Solutions built to optimize modern manufacturing.Delivering innovation, efficiency, and performance for industrial growth.`
+        }
       ],
       tools: ["AutoCAD", "CATIA", "SolidWorks",  "ANSYS"],
       industries: ["Automotive", "Manufacturing"],
@@ -146,7 +146,7 @@ function ServiceDetail() {
             {service.services.map((svc, idx) => (
               <div key={idx} className="service-item">
                 <h3>{svc.title}</h3>
-                <p>{svc.description}</p>
+                <p style={{ whiteSpace: "pre-line" }}>{svc.description}</p>
               </div>
             ))}
           </div>

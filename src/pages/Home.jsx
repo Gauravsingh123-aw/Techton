@@ -20,7 +20,7 @@ function Home() {
       {/* Hero Section */}
       <HeroSection
         title="Transform Your Vision into Reality"
-        subtitle="Multi-domain expertise in Mechanical Design, Software & IT, and Layout Design"
+        subtitle="Mechanical Design, SPM Design, Software Development & IT Solutions and Layout Design"
         primaryBtn={{ text: "Get a Quote", link: "/contact" }}
         secondaryBtn={{ text: "View Projects", link: "/projects" }}
         image={home_img}
