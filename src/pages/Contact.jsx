@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
 import axios from 'axios'
-import contact_banner from '../assets/contact_us.jpg'
-
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -41,7 +39,7 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact-hero">
-        <img className="img-banner" src={contact_banner} alt="Contact Banner" />
+        <img className="img-banner" src="https://res.cloudinary.com/dldz286xx/image/upload/v1773746104/contact_us_ei87xb.jpg" alt="Contact Banner" />
         <div className="overlay">
           <h1>Get In Touch</h1>
           <p>Have a project in mind? We'd love to hear from you</p>

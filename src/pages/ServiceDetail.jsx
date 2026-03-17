@@ -114,13 +114,13 @@ function ServiceDetail() {
   const service = serviceDetails[serviceId];
   let banner;
   if(service.title==="Software & IT Solutions"){
-    banner=soft_banner;
+    banner="https://res.cloudinary.com/dldz286xx/image/upload/v1773746103/soft_banner_rvsuay.jpg";
   }
   else if(service.title=="Mechanical Design Services"){
-    banner=mech_banner;
+    banner="https://res.cloudinary.com/dldz286xx/image/upload/v1773746103/mech_banner_xg1z37.jpg";
   }
   else if(service.title=="Layout Design Services"){
-    banner=layout_banner;
+    banner="https://res.cloudinary.com/dldz286xx/image/upload/v1773746103/layout_banner_kojxqg.jpg";
   }
 
   if (!service) {
