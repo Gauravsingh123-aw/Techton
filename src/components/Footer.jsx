@@ -14,7 +14,7 @@ function Footer() {
           <div className="social-links">
             {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">f</a> */}
             {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">𝕏</a> */}
-            <a href="https://www.linkedin.com/in/tektontech-solution-2637453a8/" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://www.linkedin.com/in/tektontech-solutions-2637453a8/" target="_blank" rel="noopener noreferrer">in</a>
             <a href="https://www.instagram.com/tektontechsolutions_/" target="_blank" rel="noopener noreferrer">📷</a>
           </div>
         </div>
