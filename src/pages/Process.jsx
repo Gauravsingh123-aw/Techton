@@ -41,7 +41,7 @@ function Process() {
               <p>Multiple review cycles guarantee that the final product meets your expectations.</p>
             </div>
             <div className="benefit-card">
-              <h3>📞 Ongoing Support</h3>
+              <h3>📞 Online Support</h3>
               <p>We don't disappear after delivery - we provide continuous support and maintenance.</p>
             </div>
           </div>

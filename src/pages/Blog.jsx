@@ -32,7 +32,7 @@ function Blog() {
         </div>
 
         {/* Newsletter Signup */}
-        <section className="newsletter-section">
+        {/* <section className="newsletter-section">
           <h2>Subscribe to Our Newsletter</h2>
           <p>Get the latest insights and updates delivered to your inbox</p>
           <form className="newsletter-form">
@@ -43,7 +43,7 @@ function Blog() {
             />
             <button type="submit" className="btn btn-primary">Subscribe</button>
           </form>
-        </section>
+        </section> */}
       </div>
     </div>
   );

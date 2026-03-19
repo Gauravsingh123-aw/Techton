@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <h3>About TektonTech</h3>
-          <p>Multi-domain expertise in Mechanical Design, Software Solutions, and Layout Design.</p>
+          <p>Multi-domain expertise in Mechanical Design,SPM Design, Software Development & IT Solutions and Layout Design</p>
           <div className="social-links">
             {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">f</a> */}
             {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">𝕏</a> */}

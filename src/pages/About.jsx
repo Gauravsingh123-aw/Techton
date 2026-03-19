@@ -5,10 +5,10 @@ import '../styles/About.css';
 function About() {
   return (
     <div className="about">
-      <HeroSection
-        title="About TektonTech Solutions"
-        subtitle="Building excellence across Mechanical Design, Software, and Layout Design"
-      />
+    <div className="projects-hero">
+        <h1>About Tektontech Solutions</h1>
+        <p>Building excellence across Mechanical & SPM Design, Software, and Layout Design</p>
+      </div>
 
       <div className="about-container">
         {/* Company Overview */}
@@ -75,6 +75,8 @@ function About() {
               <h3>⚙️ Mechanical Design</h3>
               <ul>
                 <li>CAD</li>
+                <li>Jig & Fixtures Design</li>
+                <li>SPM Design</li>
                 <li>Product Development & Prototyping</li>
                 <li>Manufacturing & Assembly Drawings</li>
                 <li>FEA</li>
@@ -82,10 +84,11 @@ function About() {
               </ul>
             </div>
             <div className="expertise-card">
-              <h3>💻 Software Solutions</h3>
+              <h3>💻 Software & IT Solutions</h3>
               <ul>
                 <li>Web Application Development</li>
                 <li>Mobile App Development</li>
+                <li>Desktop App Development</li>
                 <li>ERP & CRM Systems</li>
                 <li>UI/UX Design</li>
                 <li>Cloud Solutions & Maintenance</li>
@@ -129,10 +132,7 @@ function About() {
               <h4>🌐 Multi-Domain Expertise</h4>
               <p>Unlike competitors, we offer integrated solutions across mechanical, software, and interior design.</p>
             </div>
-            <div className="diff-item">
-              <h4>🔬 Proven Track Record</h4>
-              <p>150+ successful projects delivered with consistently high client satisfaction rates.</p>
-            </div>
+          
             <div className="diff-item">
               <h4>💼 Tailored Approach</h4>
               <p>We customize every solution to match your unique business requirements and goals.</p>
