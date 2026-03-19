@@ -1,9 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/ServiceDetail.css';
-import mech_banner from '../assets/mech_banner.jpg'
-import soft_banner from '../assets/soft_banner.jpg'
-import layout_banner from '../assets/layout_banner.jpg'
 
 
 function ServiceDetail() {
