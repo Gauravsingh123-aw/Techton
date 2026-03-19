@@ -1,12 +1,52 @@
-/* Home Page */
-.home {
-  width: 100%;
+/* --- Global Reset Overrides --- */
+:root {
+  --primary-indigo: #4f46e5;
+  --primary-dark: #4338ca;
+  --heading-navy: #0f172a;
+  --text-slate: #475569;
+  --bg-ice-blue: #f0f7ff;
+  --border-light: #e2e8f0;
 }
 
-/* About Snapshot */
+.home {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- Section Global Spacing --- */
+section {
+  padding: 2rem 2rem; /* Increased padding for "premium" breathability */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--heading-navy);
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-slate);
+  font-size: 1.15rem;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- About Snapshot (Why Choose Us) --- */
 .about-snapshot {
-  padding: 6rem 2rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 50%, #fce7f3 100%);
+  background: var(--bg-ice-blue);
+  border-bottom: 1px solid #e1effe;
   position: relative;
   overflow: hidden;
 }
@@ -14,274 +54,146 @@
 .about-snapshot::before {
   content: '';
   position: absolute;
-  top: -200px;
-  right: -100px;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+  top: -100px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.05) 0%, transparent 70%);
   border-radius: 50%;
-  z-index: 0;
-}
-
-.about-snapshot > * {
-  position: relative;
-  z-index: 1;
-}
-
-.about-snapshot .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.about-snapshot h2 {
-  color: var(--dark-color);
 }
 
 .intro-text {
   text-align: center;
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 3rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: var(--text-slate);
+  font-style: italic;
+  max-width: 850px;
+  margin: 0 auto;
+  font-weight: 500;
 }
 
-/* Stats Grid */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
+/* --- Services Overview --- */
 
-.stat-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
-  padding: 2.5rem;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 50px rgba(99, 102, 241, 0.25);
-}
-
-.stat-card h3 {
-  font-size: 2.8rem;
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem;
-  font-weight: 800;
-}
-
-.stat-card p {
-  color: #666;
-  font-weight: 600;
-}
-
-/* Services Section */
 .services-section {
-  padding: 6rem 2rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 252, 1) 100%);
+  background: #ffffff;
   position: relative;
-  overflow: hidden;
 }
 
-.services-section::after {
+/* Add a decorative "blob" behind the grid to show off the glass blur */
+.services-section::before {
   content: '';
   position: absolute;
-  bottom: -300px;
-  left: -200px;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(240, 93, 108, 0.08) 0%, transparent 70%);
-  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
   z-index: 0;
-}
-
-.services-section > * {
-  position: relative;
-  z-index: 1;
-}
-
-.services-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-subtitle {
-  text-align: center;
-  color: #666;
-  font-size: 1.2rem;
-  margin-bottom: 3rem;
+  pointer-events: none;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  
 }
 
-/* Featured Projects */
+/* --- Featured Projects --- */
 .featured-projects {
-  padding: 6rem 2rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.featured-projects::before {
-  content: '';
-  position: absolute;
-  top: -250px;
-  left: -200px;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
-  border-radius: 50%;
-  z-index: 0;
-}
-
-.featured-projects > * {
-  position: relative;
-  z-index: 1;
-}
-
-.featured-projects .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  background: #f8fafc; /* Very subtle grey to distinguish from white services */
+  border-top: 1px solid var(--border-light);
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
 }
 
 .view-all-btn {
-  display: block;
-  text-align: center;
-  padding: 12px 30px;
-  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background-color: var(--primary-indigo);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 12px;
   width: fit-content;
   margin: 0 auto;
   font-weight: 600;
-  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
 }
 
 .view-all-btn:hover {
-  background-color: #0052cc;
-  transform: translateY(-2px);
+  background-color: var(--primary-dark);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.3);
 }
 
-/* Testimonials */
-.testimonials {
-  padding: 4rem 2rem;
-  background-color: white;
-}
-
-.testimonials .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.testimonial-card {
-  background: var(--light-color);
-  padding: 2rem;
-  border-radius: 10px;
-  border-left: 4px solid var(--primary-color);
-}
-
-.stars {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.testimonial-text {
-  font-style: italic;
-  color: #555;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.testimonial-card h4 {
-  margin-bottom: 0.3rem;
-  color: var(--dark-color);
-}
-
-.testimonial-meta {
-  font-size: 0.9rem;
-  color: #999;
-}
-
-/* Final CTA */
+/* --- Final CTA --- */
 .final-cta {
-  padding: 4rem 2rem;
-  /* match dark hero gradient for cohesive dark look */
-  background: linear-gradient(135deg, #071026 0%, #0A192F 60%, #0f2a44 100%);
+  padding: 100px 2rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: white;
   text-align: center;
-}
-
-.final-cta .container {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .final-cta h2 {
   color: white;
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .final-cta p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+  color: #94a3b8;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-large {
+  display: inline-block;
   background-color: white;
-  color: var(--primary-color);
+  color: var(--primary-indigo);
+  padding: 18px 42px;
+  border-radius: 12px;
   font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .btn-large:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #f8fafc;
+  transform: scale(1.05);
 }
 
+/* --- Responsive Design --- */
 @media (max-width: 768px) {
-  .about-snapshot,
-  .services-section,
-  .featured-projects,
-  .testimonials,
-  .final-cta {
-    padding: 2rem 1rem;
+  section {
+    padding: 5rem 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
   }
 
   .services-grid,
-  .projects-grid,
-  .testimonials-grid {
+  .projects-grid {
     grid-template-columns: 1fr;
-  }
-
-  .stat-card h3 {
-    font-size: 2rem;
+    gap: 1.5rem;
   }
 }

@@ -1,7 +1,7 @@
 /* Project Card */
 .project-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
-  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(214, 222, 228, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
   transition: all 0.4s ease;

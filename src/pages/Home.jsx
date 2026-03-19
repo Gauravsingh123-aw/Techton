@@ -106,7 +106,7 @@ function Home() {
             life.
           </p>
           <Link to="/contact" className="btn btn-large">
-            Get In Touch Today
+            Get In Touch 
           </Link>
         </div>
       </section>

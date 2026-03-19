@@ -5,7 +5,7 @@ export const serviceCategories = [
     id: "mechanical",
     name: "Mechanical Design Services",
     icon: "⚙️",
-    shortDesc: "Expert CAD design and mechanical engineering solutions",
+    shortDesc: "Expert CAD mechanical design, fixture and SPM design and mechanical engineering solutions",
     fullDesc: "We provide comprehensive mechanical design services including 2D & 3D CAD design, product development, manufacturing drawings, reverse engineering, and FEA analysis."
   },
   {
@@ -19,7 +19,7 @@ export const serviceCategories = [
     id: "interior",
     name: "Layout Design Services",
     icon: "🎨",
-    shortDesc: "Modern interior design for residential and commercial spaces",
+    shortDesc: "2D Layout Design for Residential and Commercial Spaces",
     fullDesc: "We specialize in residential and commercial interior design, 3D visualization, space planning, and complete renovation projects."
   }
 ];
