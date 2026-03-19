@@ -70,7 +70,7 @@ export const processSteps = [
   },
   {
     number: 2,
-    title: "Planning & Feasibility",
+    title: "Feasibility & Planning",
     description: "Our team creates a detailed project plan with timelines, resource allocation, and feasibility assessment."
   },
   {
@@ -90,7 +90,7 @@ export const processSteps = [
   },
   {
     number: 6,
-    title: "Support & Maintenance",
+    title: "Service & Support",
     description: "Ongoing support, updates, and maintenance to ensure optimal performance."
   }
 ];

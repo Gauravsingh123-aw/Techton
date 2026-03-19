@@ -8,7 +8,7 @@ function ServiceDetail() {
 
   const serviceDetails = {
     mechanical: {
-      title: "Mechanical Design Services",
+      title: "Mechanical & SPM Design Services",
       icon: "⚙️",
       intro: "Transform your mechanical concepts into precise, manufacturable designs with our expert CAD and engineering services.",
       services: [
@@ -88,22 +88,10 @@ function ServiceDetail() {
           title: "2D Layout",
           description: "Well-designed 2D, office, and plant layouts ensure smooth operational flow while minimizing movement and maximizing output"
         },
-        // {
-        //   title: "JIG Design",
-        //   description: "Photorealistic 3D renderings to visualize designs before implementation."
-        // },
-        // {
-        //   title: "Fixture Design",
-        //   description: "Optimal space utilization with ergonomic and aesthetic considerations."
-        // },
-        
-        // {
-        //   title: "Space Planning",
-        //   description: "Optimal space utilization with ergonomic and aesthetic consideration."
-        // }
+   
       ],
       tools: ["SketchUp", "AutoCAD"],
-      industries: ["Residential", "Commercial", "Healthcare", "Hospitality", "Retail", "Corporate"],
+      industries: ["Residential", "Commercial", "Corporate Offices","Manufacturing Plants"],
       process: "We begin with consultation and space assessment, create 3D visualizations, finalize designs with your feedback, source materials, and manage professional installation."
     }
   };
@@ -113,7 +101,7 @@ function ServiceDetail() {
   if(service.title==="Software & IT Solutions"){
     banner="https://res.cloudinary.com/dldz286xx/image/upload/v1773746103/soft_banner_rvsuay.jpg";
   }
-  else if(service.title=="Mechanical Design Services"){
+  else if(service.title=="Mechanical & SPM Design Services"){
     banner="https://res.cloudinary.com/dldz286xx/image/upload/v1773746103/mech_banner_xg1z37.jpg";
   }
   else if(service.title=="Layout Design Services"){
@@ -129,7 +117,7 @@ function ServiceDetail() {
       <div className="service-hero">
         <img className="img-banner" src={banner} alt="Service Banner" />
         <div className="overlay">
-          <span className="service-icon">{service.icon}</span>
+          {/* <span className="service-icon">{service.icon}</span> */}
           <h1>{service.title}</h1>
           <p>{service.intro}</p>
         </div>
