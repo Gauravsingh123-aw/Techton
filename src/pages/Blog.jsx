@@ -6,7 +6,7 @@ function Blog() {
   return (
     <div className="blog">
       <div className="blog-hero">
-        <h1>Blog & Insights</h1>
+        <h1>Blogs & Insights</h1>
         <p>Latest trends, insights, and expert opinions in technology and design</p>
       </div>
 
