@@ -1,9 +1,11 @@
+import testing_fixture from '../assets/testing_fixture.jpeg'
+import assembly_fixture from '../assets/assembly_fixture.jpeg'
 export const serviceCategories = [
   {
     id: "mechanical",
     name: "Mechanical Design Services",
     icon: "⚙️",
-    shortDesc: "Expert CAD design and mechanical engineering solutions",
+    shortDesc: "Expert CAD mechanical design, fixture and SPM design and mechanical engineering solutions",
     fullDesc: "We provide comprehensive mechanical design services including 2D & 3D CAD design, product development, manufacturing drawings, reverse engineering, and FEA analysis."
   },
   {
@@ -17,7 +19,7 @@ export const serviceCategories = [
     id: "interior",
     name: "Layout Design Services",
     icon: "🎨",
-    shortDesc: "Modern interior design for residential and commercial spaces",
+    shortDesc: "2D Layout Design for Residential and Commercial Spaces",
     fullDesc: "We specialize in residential and commercial interior design, 3D visualization, space planning, and complete renovation projects."
   }
 ];
@@ -59,12 +61,12 @@ export const stats = [
 export const projectsData = [
   {
     id: 1,
-    title: "Advanced CNC Machine Design",
+    title: "Testing fixture",
     category: "Mechanical",
-    problem: "Client needed a custom CNC machine for precision manufacturing with improved efficiency.",
-    solution: "Designed complete CAD models with 3D simulations, created manufacturing drawings, and optimized for production.",
+    problem: "The client needed custom-designed testing fixtures to ensure accurate assembly, reliable testing, and improved overall efficiency.",
+    solution: "We designed and developed custom testing fixtures that enabled precise assembly, reliable testing, reduced setup time, and enhanced productivity",
     tools: ["AutoCAD", "CATIA", "ANSYS"],
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop"
+    image: testing_fixture
   },
   {
     id: 2,
@@ -78,7 +80,7 @@ export const projectsData = [
   {
     id: 3,
     title: "Corporate Office Interior Redesign",
-    category: "Interior",
+    category: "Layout",
     problem: "Legacy office space needed modern renovation to improve employee productivity and brand image.",
     solution: "Complete 3D visualization, space planning with ergonomic furniture, and collaborative areas design.",
     tools: ["SketchUp", "Photoshop", "AutoCAD"],
@@ -95,20 +97,20 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: "Hydraulic System Analysis",
+    title: "Assembly Fixtures",
     category: "Mechanical",
-    problem: "Complex hydraulic system required simulation and stress analysis before manufacturing.",
-    solution: "Performed FEA analysis, created detailed assembly drawings, and validated design performance.",
+    problem: "The client needed custom-designed assembly to ensure accurate assembly, reliable testing, and improved overall efficiency.",
+    solution: "We designed and developed custom assembly that enabled precise assembly, reliable testing, reduced setup time, and enhanced productivity",
     tools: ["SOLIDWORKS", "ANSYS Fluent", "CAD"],
-    image: "https://images.unsplash.com/photo-1581092165334-29c5030ee26e?w=400&h=300&fit=crop"
+    image: assembly_fixture
   },
   {
     id: 6,
     title: "Luxury Residential Interior",
-    category: "Interior",
+    category: "Layout",
     problem: "High-end residential project needed premium interior design with smart home integration planning.",
     solution: "Delivered 3D renders, material selection, space optimization, and technology placement layouts.",
     tools: ["3D Rendering", "Design", "Planning"],
-    image: "https://images.unsplash.com/photo-1565183938294-7563f3ce68c5?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1635939412822-8f3ee593d147?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxheW91dCUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
   }
 ];

@@ -1,178 +1,151 @@
-/* Process Page */
-.process {
-  width: 100%;
+/* --- Root & Blueprint Texture --- */
+.process-page {
+  background-color: #ffffff;
+  background-image: radial-gradient(#e2e8f0 1.2px, transparent 1.2px);
+  background-size: 40px 40px;
 }
 
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* --- Hero: Contrast Fix --- */
 .process-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 3rem 2rem;
+  background: linear-gradient(rgba(10, 18, 42, 0.96), rgba(10, 18, 42, 0.96)), 
+              url('https://images.pexels.com/photos/3183146/pexels-photo-3183146.jpeg');
+  background-size: cover;
+  padding: 100px 0;
   text-align: center;
 }
 
-.process-hero h1 {
+.premium-tag { color: #0056b3; font-weight: 800; letter-spacing: 3px; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 15px; display: block; }
+.process-hero h1 { color: #ffffff !important; font-size: 3.5rem; font-weight: 900; }
+.process-hero h1 span { color: #4dabff !important; }
+.process-hero p { color: #cbd5e1 !important; margin-top: 15px; font-size: 1.1rem; }
+
+/* --- Roadmap Layout --- */
+.process-roadmap { padding: 80px 0; position: relative; }
+.roadmap-line {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  bottom: 100px;
+  width: 2px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+
+.process-steps { display: flex; flex-direction: column; gap: 50px; position: relative; z-index: 2; }
+.process-step { display: flex; align-items: flex-start; gap: 40px; }
+
+.step-number-box {
+  width: 60px;
+  height: 60px;
+  background: #0f172a;
   color: white;
-  margin-bottom: 1rem;
-}
-
-.process-hero p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1rem;
-}
-
-.process-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* Process Steps */
-.process-steps {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
-
-.process-step {
-  display: grid;
-  grid-template-columns: 100px 1fr 50px;
-  gap: 2rem;
-  align-items: flex-start;
-  position: relative;
-}
-
-.step-number {
-  width: 80px;
-  height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
+  font-weight: 900;
   flex-shrink: 0;
+  box-shadow: 0 0 0 10px #ffffff;
 }
 
-.step-content h3 {
-  margin-bottom: 0.5rem;
-  color: var(--dark-color);
-}
+.step-label { color: #0056b3; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; }
+.step-content h3 { font-size: 1.5rem; color: #0f172a; margin: 5px 0 10px; }
+.step-content p { color: #64748b; line-height: 1.7; max-width: 800px; }
 
-.step-content p {
-  color: #666;
-  line-height: 1.6;
-}
+/* --- Benefits Section --- */
+.process-benefits { padding: 80px 0; }
+.rich-title { text-align: center; margin-bottom: 50px; text-transform: uppercase; font-weight: 900; color: #0f172a; }
 
-.step-arrow {
-  font-size: 2rem;
-  color: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Benefits */
-.process-benefits {
-  background-color: var(--light-color);
-  padding: 2rem;
-  border-radius: 10px;
-  margin-bottom: 4rem;
-}
-
-.process-benefits h2 {
-  color: var(--dark-color);
-  margin-bottom: 2rem;
-}
-
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
+.benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .benefit-card {
   background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-top: 3px solid var(--primary-color);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.3s;
+}
+.benefit-card.featured { border-color: #0056b3; box-shadow: 0 20px 40px rgba(0,86,179,0.08); }
+.benefit-icon { font-size: 2rem; display: block; margin-bottom: 15px; }
+.benefit-card h4 { text-transform: uppercase; margin-bottom: 10px; }
+
+/* --- FIXED: Timeline Dashboard (High Visibility) --- */
+.timeline-section { 
+  padding: 80px 0 120px; 
 }
 
-.benefit-card h3 {
-  margin-bottom: 0.8rem;
-  color: var(--primary-color);
-}
-
-.benefit-card p {
-  color: #666;
-  font-size: 0.95rem;
-}
-
-/* Timeline */
-.timeline-section {
-  margin-top: 3rem;
-}
-
-.timeline-section h2 {
-  color: var(--dark-color);
-  margin-bottom: 2rem;
-}
-
-.timeline-info {
+.timeline-dashboard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  background: #0f172a; /* Deep Navy Background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .timeline-item {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 60px 30px;
   text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
 }
 
-.timeline-item h4 {
-  margin-bottom: 0.5rem;
+/* Time period header (e.g., 1-2 Months) */
+.time-header { 
+  color: #4dabff !important; /* High-contrast electric blue */
+  font-weight: 900; 
+  font-size: 0.85rem; 
+  text-transform: uppercase; 
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  display: block;
 }
 
-.timeline-item p {
-  color: rgba(255, 255, 255, 0.9);
+/* Card Title (e.g., Small Scale) */
+.timeline-item h4 { 
+  font-size: 1.4rem; 
+  margin-bottom: 12px; 
+  color: #ffffff !important; /* Pure white for visibility */
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  .process-hero {
-    padding: 2rem 1rem;
-  }
+/* Card Description */
+.timeline-item p { 
+  font-size: 1rem; 
+  color: #cbd5e1 !important; /* Soft light grey for subtext */
+  line-height: 1.6;
+}
 
-  .process-hero h1 {
-    font-size: 2rem;
-  }
+/* The Middle Highlighted Card */
+.timeline-item.highlight { 
+  background: rgba(0, 86, 179, 0.15); /* Subtle blue glow background */
+  box-shadow: inset 0 0 50px rgba(0, 86, 179, 0.1);
+  position: relative;
+}
 
-  .process-container {
-    padding: 1rem;
-  }
+/* Bottom accent for the highlighted card */
+.timeline-item.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #4dabff;
+}
 
-  .process-step {
-    grid-template-columns: 70px 1fr;
-    gap: 1rem;
-  }
+.timeline-item:last-child {
+  border-right: none;
+}
 
-  .step-arrow {
-    display: none;
-  }
-
-  .step-number {
-    width: 70px;
-    height: 70px;
-    font-size: 1.5rem;
-  }
-
-  .benefits-grid,
-  .timeline-info {
-    grid-template-columns: 1fr;
-  }
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .roadmap-line { display: none; }
+  .process-step { flex-direction: column; gap: 15px; text-align: center; align-items: center; }
+  .benefits-grid, .timeline-dashboard { grid-template-columns: 1fr; }
+  .timeline-item { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 }

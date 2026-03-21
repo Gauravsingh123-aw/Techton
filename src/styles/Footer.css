@@ -1,9 +1,10 @@
 /* Footer */
 .footer {
-  background-color: var(--dark-color);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: #fff;
   padding: 4rem 2rem 1rem;
   margin-top: 4rem;
+  position: relative;
 }
 
 .footer-content {
@@ -16,8 +17,12 @@
 }
 
 .footer-section h3 {
-  color: var(--primary-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .footer-section p {
@@ -53,18 +58,20 @@
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: var(--primary-color);
+  background: var(--gradient-1);
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .social-links a:hover {
-  background-color: var(--secondary-color);
-  transform: translateY(-3px);
+  background: var(--gradient-2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
 }
 
 .footer-bottom {

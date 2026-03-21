@@ -6,7 +6,7 @@ import '../styles/Projects.css';
 function Projects() {
   const [selectedCategory, setSelectedCategory] = React.useState('All');
   
-  const categories = ['All', 'Mechanical', 'Software', 'Interior'];
+  const categories = ['All', 'Mechanical', 'Software', 'Layout'];
   
   const filteredProjects = selectedCategory === 'All' 
     ? projectsData 
@@ -16,7 +16,7 @@ function Projects() {
     <div className="projects">
       <div className="projects-hero">
         <h1>Our Projects & Portfolio</h1>
-        <p>Showcase of our expertise across Mechanical Design, Software Development, and Interior Design</p>
+        <p>Showcase of our expertise across Mechanical Design, Software Development, and Layout Design</p>
       </div>
 
       <div className="projects-container">

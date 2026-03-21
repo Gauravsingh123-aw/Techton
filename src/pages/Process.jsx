@@ -4,64 +4,76 @@ import '../styles/Process.css';
 
 function Process() {
   return (
-    <div className="process">
+    <div className="process-page">
+      {/* 1. High-Contrast Hero */}
       <div className="process-hero">
-        <h1>How We Work</h1>
-        <p>Our systematic and transparent process ensures quality results every time</p>
+        <div className="container">
+          <span className="premium-tag">Our Methodology</span>
+          <h1>How We <span>Work</span></h1>
+          <p>A systematic, transparent, and precision-driven approach to every project.</p>
+        </div>
       </div>
 
-      <div className="process-container">
-        <div className="process-steps">
-          {processSteps.map((step) => (
-            <div key={step.number} className="process-step">
-              <div className="step-number">{step.number}</div>
-              <div className="step-content">
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
+      <div className="container">
+        {/* 2. Vertical Roadmap Style Steps */}
+        <section className="process-roadmap">
+          <div className="roadmap-line"></div>
+          <div className="process-steps">
+            {processSteps.map((step, index) => (
+              <div key={step.number} className="process-step">
+                <div className="step-number-box">
+                  <span className="step-num">{step.number}</span>
+                </div>
+                <div className="step-content">
+                  <span className="step-label">Phase 0{index + 1}</span>
+                  <h3>{step.title}</h3>
+                  <p>{step.description}</p>
+                </div>
               </div>
-              {step.number < processSteps.length && <div className="step-arrow">→</div>}
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
 
-        {/* Why This Process */}
+        {/* 3. Why This Process - Balanced Gaps */}
         <section className="process-benefits">
-          <h2>Why This Process?</h2>
+          <h2 className="rich-title">Why This Process?</h2>
           <div className="benefits-grid">
             <div className="benefit-card">
-              <h3>🎯 Clear Objectives</h3>
-              <p>We start by thoroughly understanding your needs and goals before proceeding with any work.</p>
+              <span className="benefit-icon">🎯</span>
+              <h4>Clear Objectives</h4>
+              <p>We anchor every project with defined goals before the first draft.</p>
+            </div>
+            <div className="benefit-card featured">
+              <span className="benefit-icon">📋</span>
+              <h4>Detailed Planning</h4>
+              <p>Comprehensive roadmaps to ensure budget and timeline adherence.</p>
             </div>
             <div className="benefit-card">
-              <h3>📋 Detailed Planning</h3>
-              <p>Comprehensive planning ensures we stay on track and deliver within budget and timeline.</p>
-            </div>
-            <div className="benefit-card">
-              <h3>🔄 Quality Iterations</h3>
-              <p>Multiple review cycles guarantee that the final product meets your expectations.</p>
-            </div>
-            <div className="benefit-card">
-              <h3>📞 Ongoing Support</h3>
-              <p>We don't disappear after delivery - we provide continuous support and maintenance.</p>
+              <span className="benefit-icon">🔄</span>
+              <h4>Quality Iterations</h4>
+              <p>Rigorous review cycles to guarantee manufacturing-grade results.</p>
             </div>
           </div>
         </section>
 
-        {/* Timeline Expectation */}
+        {/* 4. Project Timeline - Premium Dashboard Style */}
         <section className="timeline-section">
-          <h2>Typical Project Timeline</h2>
-          <div className="timeline-info">
+          <h2 className="rich-title">Typical Project Timelines</h2>
+          <div className="timeline-dashboard">
             <div className="timeline-item">
-              <h4>Small Projects (1-2 months)</h4>
-              <p>Product designs, web pages, small interiors</p>
+              <div className="time-header">1-2 Months</div>
+              <h4>Small Scale</h4>
+              <p>Product designs, web pages, and rapid prototyping.</p>
+            </div>
+            <div className="timeline-item highlight">
+              <div className="time-header">2-4 Months</div>
+              <h4>Medium Scale</h4>
+              <p>Complete SPM development & enterprise web apps.</p>
             </div>
             <div className="timeline-item">
-              <h4>Medium Projects (2-4 months)</h4>
-              <p>Complete product development, web applications, office designs</p>
-            </div>
-            <div className="timeline-item">
-              <h4>Large Projects (4+ months)</h4>
-              <p>Complex systems, enterprise software, comprehensive renovations</p>
+              <div className="time-header">4+ Months</div>
+              <h4>Complex Systems</h4>
+              <p>Full plant layouts and integrated software ecosystems.</p>
             </div>
           </div>
         </section>

@@ -1,142 +1,171 @@
-/* Service Detail Page */
-.service-detail {
+/* --- Base Theme --- */
+.service-detail-page {
+  background-color: #ffffff;
+  background-image: radial-gradient(#e2e8f0 1.2px, transparent 1.2px);
+  background-size: 40px 40px;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* --- Hero with Premium Vignette --- */
+.detail-hero {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.detail-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #0f172a 30%, rgba(15, 23, 42, 0.4) 100%);
+  z-index: 2;
+}
+
+.hero-overlay-content {
+  position: relative;
+  z-index: 3;
+  color: white;
   width: 100%;
 }
 
-.service-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 3rem 2rem;
-  text-align: center;
+.hero-overlay-content h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  margin: 10px 0;
+  color: #ffffff !important;
 }
 
-.service-icon {
-  font-size: 4rem;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.service-hero h1 {
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.service-hero p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1rem;
-}
-
-.service-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.service-section {
-  margin-bottom: 3rem;
-}
-
-.service-section h2 {
-  color: var(--dark-color);
-  margin-bottom: 2rem;
-}
-
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.service-item {
-  background: var(--light-color);
-  padding: 2rem;
-  border-radius: 10px;
-  border-left: 4px solid var(--primary-color);
-}
-
-.service-item h3 {
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.service-item p {
-  color: #555;
+.hero-overlay-content p {
+  max-width: 600px;
+  font-size: 1.2rem;
+  color: #cbd5e1 !important;
   line-height: 1.6;
 }
 
-/* Tools & Technologies */
-.tools-list,
-.industries-list {
+/* --- Service Grid: The "Rich" Look --- */
+.detail-section { padding: 80px 0; }
+.section-header-left { margin-bottom: 50px; border-left: 4px solid #0056b3; padding-left: 20px; }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.detail-card {
+  background: white;
+  padding: 40px;
+  border: 1px solid #f1f5f9;
+  position: relative;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.detail-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.1);
+  border-color: #0056b3;
+}
+
+.detail-num {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #0056b3;
+  opacity: 0.1;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.detail-card h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 15px; color: #0f172a; }
+.detail-card p { color: #64748b; font-size: 0.95rem; line-height: 1.6; }
+
+/* --- Technology & Industry Boxes --- */
+.tech-industry-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.tech-box, .industry-box {
+  background: #f8fafc;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.tech-box h4, .industry-box h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.badge-cloud { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.tech-badge {
+  background: #0f172a;
+  color: #4dabff;
+  padding: 8px 18px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.ind-badge {
+  background: white;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+  padding: 8px 18px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+/* --- The Strategy Card --- */
+.approach-section { padding-bottom: 100px; }
+.approach-card {
+  background: #0f172a;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.tool-badge,
-.industry-badge {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.7rem 1.2rem;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.industry-badge {
-  background-color: var(--secondary-color);
-}
-
-/* Process Text */
-.process-text {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #555;
-  background: var(--light-color);
-  padding: 2rem;
-  border-radius: 10px;
-  border-left: 4px solid var(--primary-color);
-}
-
-/* CTA */
-.service-cta {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
-  padding: 3rem 2rem;
-  text-align: center;
-  border-radius: 10px;
-  margin-top: 3rem;
-}
-
-.service-cta h2 {
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  border-radius: 12px;
   color: white;
 }
 
-.service-cta p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+.approach-content h3 { color: #4dabff; font-weight: 900; text-transform: uppercase; margin-bottom: 15px; }
+.approach-content p { font-size: 1.1rem; color: #cbd5e1; }
+
+.approach-cta {
+  background: #4dabff;
+  color: #0f172a;
+  padding: 20px 40px;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  white-space: nowrap;
 }
 
-@media (max-width: 768px) {
-  .service-hero {
-    padding: 2rem 1rem;
-  }
+.approach-cta:hover { background: #ffffff; transform: scale(1.05); }
 
-  .service-icon {
-    font-size: 3rem;
-  }
-
-  .service-container {
-    padding: 1rem;
-  }
-
-  .services-list {
-    grid-template-columns: 1fr;
-  }
-
-  .tools-list,
-  .industries-list {
-    justify-content: flex-start;
-  }
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .detail-grid, .tech-industry-section, .approach-card { grid-template-columns: 1fr; flex-direction: column; text-align: center; }
+  .detail-hero { height: 400px; text-align: center; }
+  .detail-hero::after { background: rgba(15, 23, 42, 0.8); }
+  .approach-cta { margin-top: 30px; }
 }
