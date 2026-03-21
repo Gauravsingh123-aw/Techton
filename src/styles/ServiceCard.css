@@ -1,50 +1,87 @@
 .service-card {
-  /* Use a very light indigo-tinted background instead of pure white */
-  background: rgba(224, 231, 255, 0.3); 
+  /* Remove the glass effect - use solid white for that clean corporate look */
+  background: #ffffff;
   
-  /* Stronger blur to create separation */
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  /* Sharp borders instead of rounded glass edges */
+  border: 1px solid #e5e7eb; 
+  border-radius: 4px; /* Slight rounding for a modern feel, but not a pill shape */
   
-  /* The Secret: A double-layered border */
-  /* Top/Left is bright white, Bottom/Right is darker blue-grey */
-  border: 1px solid rgba(199, 199, 201, 0.6);
-  /* border-bottom: 2px solid rgba(99, 102, 241, 0.1);  */
-  
-  border-radius: 12px;
-  padding: 3rem 2rem;
+  /* Padding adjustment for a more vertical, airy feel */
+  padding: 50px 30px;
   text-align: center;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Smooth transition for the hover "lift" */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Subtle shadow that feels grounded, not floating */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   
-  /* Use a slightly darker shadow to "lift" it from the light background */
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04),
-              0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  /* Important: Prepare for the top-accent bar seen in the reference */
+  border-top: 4px solid transparent; 
+  position: relative;
+  overflow: hidden;
 }
 
 .service-card:hover {
-  transform: translateY(-12px);
-  /* Make it significantly darker/richer on hover */
-  background: rgba(224, 231, 255, 0.6);
-  border-color: rgba(113, 116, 247, 0.3);
-  box-shadow: 0 20px 40px -10px rgba(99, 102, 241, 0.15);
+  transform: translateY(-8px);
+  background: #ffffff;
+  
+  /* Reference Site Style: The top border turns blue on hover */
+  border-top: 4px solid #0056b3; 
+  
+  /* Deeper shadow on hover for depth */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .service-icon {
   font-size: 3.5rem;
-  margin-bottom: 1.5rem;
-  /* Darken the icon slightly so it pops against the glass */
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  margin-bottom: 25px;
+  /* Remove the drop shadow for a flatter, more modern UI icon look */
+  filter: none;
+  color: #0056b3; /* Primary industrial blue */
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
 }
 
 .service-card h3 {
-  color: #0f172a; /* Ensure the text is high-contrast Navy */
-  font-weight: 800;
-  margin-bottom: 1rem;
+  /* High contrast, uppercase for an engineering/professional feel */
+  color: #111827; 
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .service-card p {
-  color: #334155; /* Darker slate for readability */
-  line-height: 1.7;
+  color: #4b5563; /* Medium grey for descriptions */
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Pushes the "View Info" link to the bottom */
+}
+
+/* Add styling for the 'service-link' (which replaces the button) */
+.service-link {
+  color: #0056b3;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-link {
+  border-bottom: 2px solid #0056b3;
 }

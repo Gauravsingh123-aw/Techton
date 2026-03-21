@@ -1,23 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.jpg';
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <img className="logo-icon" src={logo}/>
-          {/* <span className="logo-text">Tekton Tech</span> */}
+          <img className="logo-icon" src={logo} alt="TektonTech Logo"/>
         </Link>
 
-        <button className="mobile-menu-btn" onClick={toggleMenu}>
+        <button className="mobile-menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <span></span>
           <span></span>
           <span></span>
@@ -26,6 +22,7 @@ function Header() {
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+          
           <div className="dropdown">
             <span className="dropdown-title">Services</span>
             <div className="dropdown-menu">
@@ -34,11 +31,16 @@ function Header() {
               <Link to="/services/interior" onClick={() => setIsMenuOpen(false)}>Layout Design</Link>
             </div>
           </div>
+
           <Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link>
           <Link to="/process" onClick={() => setIsMenuOpen(false)}>Process</Link>
           <Link to="/why-us" onClick={() => setIsMenuOpen(false)}>Why Us</Link>
           <Link to="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link>
-          <Link to="/contact" className="cta-btn" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+          
+          {/* Main CTA: Matches the Hero Buttons */}
+          <Link to="/contact" className="header-cta" onClick={() => setIsMenuOpen(false)}>
+            Contact Us
+          </Link>
         </nav>
       </div>
     </header>
