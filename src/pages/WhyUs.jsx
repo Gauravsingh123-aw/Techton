@@ -4,133 +4,113 @@ import '../styles/WhyUs.css';
 
 function WhyUs() {
   return (
-    <div className="why-us">
+    <div className="why-us-page">
+      {/* 1. Hero Section - Consistent with About Theme */}
       <div className="why-us-hero">
-        <h1>Why Choose TektonTech Solutions?</h1>
-        <p>Discover what sets us apart from the competition</p>
+        <div className="container">
+          <span className="premium-tag">The TektonTech Advantage</span>
+          <h1>Why Partner With <span>Us?</span></h1>
+          <p>We combine industrial precision with modern digital agility to deliver results that move the needle.</p>
+        </div>
       </div>
 
-      <div className="why-us-container">
-        {/* Main Highlights */}
-        <section className="highlights-grid">
-          {whyChooseUs.map((item, idx) => (
-            <div key={idx} className="highlight-card">
-              <div className="highlight-icon">{item.icon}</div>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </div>
-          ))}
+      <div className="container">
+        {/* 2. Main Highlights - Grid with Depth */}
+        <section className="highlights-section">
+          <div className="highlights-grid">
+            {whyChooseUs.map((item, idx) => (
+              <div key={idx} className="highlight-card">
+                <div className="highlight-icon">{item.icon}</div>
+                <h3>{item.title}</h3>
+                <div className="card-line"></div>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
-        {/* Detailed Comparison */}
+        {/* 3. Comparison Section - Dark Industrial Style */}
         {/* <section className="comparison-section">
-          <h2>How We Compare</h2>
-          <div className="comparison-table">
-            <table>
+          <div className="section-header">
+            <span className="accent-text">Transparency</span>
+            <h2>How We Compare</h2>
+          </div>
+          <div className="comparison-container">
+            <table className="rich-table">
               <thead>
                 <tr>
                   <th>Feature</th>
-                  <th>Tekton Tech</th>
+                  <th>TektonTech Solutions</th>
                   <th>Traditional Agencies</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Multi-domain expertise</td>
-                  <td className="check">✓</td>
-                  <td>✗</td>
+                  <td className="check-cell">✓ Full Integration</td>
+                  <td className="cross-cell">✗ Single Focus</td>
                 </tr>
                 <tr>
                   <td>Integrated solutions</td>
-                  <td className="check">✓</td>
-                  <td>✗</td>
+                  <td className="check-cell">✓ End-to-End</td>
+                  <td className="cross-cell">✗ Fragmented</td>
                 </tr>
                 <tr>
                   <td>Cost efficiency</td>
-                  <td className="check">✓</td>
-                  <td>✗</td>
+                  <td className="check-cell">✓ Optimized ROI</td>
+                  <td className="cross-cell">✗ High Overheads</td>
                 </tr>
                 <tr>
                   <td>Quality assurance</td>
-                  <td className="check">✓</td>
-                  <td>✓</td>
+                  <td className="check-cell">✓ ISO Standards</td>
+                  <td className="check-cell">✓ Standard</td>
                 </tr>
                 <tr>
-                  <td>Post-project support</td>
-                  <td className="check">✓</td>
-                  <td>Limited</td>
-                </tr>
-                <tr>
-                  <td>Transparent communication</td>
-                  <td className="check">✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td>Timeline adherence</td>
-                  <td className="check">✓</td>
-                  <td>✗</td>
-                </tr>
-                <tr>
-                  <td>Industry experience</td>
-                  <td>15+ years</td>
-                  <td>Varies</td>
+                  <td>POST-Project Support</td>
+                  <td className="check-cell">✓ 24/7 Dedicated</td>
+                  <td className="cross-cell">✗ Limited</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </section> */}
 
-        {/* Client Success Stories */}
-        {/* <section className="success-metrics">
-          <h2>Our Track Record</h2>
+        {/* 4. Success Metrics - High-Impact Band */}
+        {/* <section className="metrics-section">
           <div className="metrics-grid">
-            <div className="metric">
-              <h3>150+</h3>
-              <p>Projects Successfully Delivered</p>
+            <div className="metric-item">
+              <span className="metric-num">150+</span>
+              <p>Projects Delivered</p>
             </div>
-            <div className="metric">
-              <h3>80+</h3>
-              <p>Satisfied Clients Worldwide</p>
+            <div className="metric-item">
+              <span className="metric-num">98%</span>
+              <p>Satisfaction Rate</p>
             </div>
-            <div className="metric">
-              <h3>98%</h3>
-              <p>Client Satisfaction Rate</p>
-            </div>
-            <div className="metric">
-              <h3>45+</h3>
-              <p>Expert Team Members</p>
+            <div className="metric-item">
+              <span className="metric-num">2026</span>
+              <p>Modern Vision</p>
             </div>
           </div>
         </section> */}
 
-        {/* Our Commitment */}
+        {/* 5. Our Commitment - Numbered List Style */}
         <section className="commitment-section">
-          <h2>Our Commitment to You</h2>
-          <div className="commitment-list">
-            <div className="commitment-item">
-              <h4>1. Transparent Pricing</h4>
-              <p>No hidden costs. We provide detailed quotes and explain every charge upfront.</p>
-            </div>
-            <div className="commitment-item">
-              <h4>2. Quality Guarantee</h4>
-              <p>We stand behind our work with rigorous quality checks and revisions until you're satisfied.</p>
-            </div>
-            <div className="commitment-item">
-              <h4>3. Timely Delivery</h4>
-              <p>Respect for your timeline is paramount. We deliver on schedule or communicate delays immediately.</p>
-            </div>
-            <div className="commitment-item">
-              <h4>4. Dedicated Support</h4>
-              <p>From kickoff to after launch, you have a dedicated team supporting your project.</p>
-            </div>
-            <div className="commitment-item">
-              <h4>5. Innovation & Learning</h4>
-              <p>We stay updated with latest technologies and methodologies to bring cutting-edge solutions.</p>
-            </div>
-            <div className="commitment-item">
-              <h4>6. Long-term Partnership</h4>
-              <p>We view clients as partners and strive for long-term, mutually beneficial relationships.</p>
-            </div>
+          <h2 className="rich-title">Our Commitment to You</h2>
+          <div className="commitment-grid">
+            {[
+              { t: "Transparent Pricing", d: "No hidden costs. Detailed quotes and upfront explanations." },
+              { t: "Quality Guarantee", d: "Rigorous quality checks and revisions until satisfaction." },
+              { t: "Timely Delivery", d: "We respect your timeline. On schedule, every time." },
+              { t: "Dedicated Support", d: "A dedicated team from kickoff to post-launch." },
+              { t: "Innovation First", d: "Using the latest tech to bring cutting-edge solutions." },
+              { t: "Long-term Partnership", d: "We view clients as partners, not just customers." }
+            ].map((item, i) => (
+              <div key={i} className="commitment-card">
+                <span className="commit-num">0{i + 1}</span>
+                <h4>{item.t}</h4>
+                <p>{item.d}</p>
+              </div>
+            ))}
           </div>
         </section>
       </div>
